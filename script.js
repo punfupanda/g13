@@ -29,10 +29,9 @@ function addHabit() {
     }
 }
 
-// Function/increase count
 function increaseCount(id) {
     
-    // Find the habit/increase its count
+    
     for (let habit of habits) {
         if (habit.id === id) {
             habit.count++;
@@ -44,7 +43,7 @@ function increaseCount(id) {
 
 function decreaseCount(id) {
     
-    // Find the habit/decrease its count
+
     for (let habit of habits) {
         if (habit.id === id) {
             if (habit.count > 0) {
@@ -55,3 +54,5 @@ function decreaseCount(id) {
     }
     displayHabits();
 }
+
+
